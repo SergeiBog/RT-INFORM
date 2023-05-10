@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Java {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         while (!sc.hasNext("count")) {
             list.add(sc.nextInt());
