@@ -11,6 +11,7 @@ public class Java {
         while (!sc.hasNext("count")){
             list.add(sc.nextInt());
         }
+
         sc.close();
         HashMap<Integer,Integer> result= countElements(list);
         for(int key: result.keySet()){
