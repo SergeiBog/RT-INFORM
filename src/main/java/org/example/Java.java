@@ -15,6 +15,7 @@ public class Java {
         HashMap<Integer,Integer> result= countElements(list);
         for(int key: result.keySet()){
             System.out.println(key + " : "+result.get(key));
+
         }
     }
 
