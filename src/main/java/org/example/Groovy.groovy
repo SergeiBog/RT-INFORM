@@ -11,8 +11,8 @@ static void main(String[] args) {
     }
 }
 
-static HashMap<Integer, Integer> countElements(ArrayList<Integer> list) {
-    HashMap<Integer, Integer> result = new HashMap<>();
+static Map<Integer, Integer> countElements(List<Integer> list) {
+    Map<Integer, Integer> result = new HashMap<>();
     for (x in list) {
         if (!result.containsKey(x)) {
             result.put(x, 1)

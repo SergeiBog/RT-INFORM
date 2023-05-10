@@ -1,8 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class Java {
     public static void main(String[] args) {
@@ -13,14 +11,14 @@ public class Java {
         }
 
         sc.close();
-        HashMap<Integer, Integer> result = countElements(list);
+        Map<Integer, Integer> result = countElements(list);
         for (int key : result.keySet()) {
             System.out.println(key + " : " + result.get(key));
         }
     }
 
-    public static HashMap<Integer, Integer> countElements(ArrayList<Integer> list) {
-        HashMap<Integer, Integer> result = new HashMap<>();
+    public static Map<Integer, Integer> countElements(List<Integer> list) {
+        Map<Integer, Integer> result = new HashMap<>();
         for (int i : list) {
             if (!result.containsKey(i)) {
                 result.put(i, 1);
